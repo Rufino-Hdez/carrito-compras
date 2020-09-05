@@ -10,16 +10,16 @@
             }else{
                 $carrito = array();
             }
-            //Pasarle la var carrito a la vista
+            //Pasarle carrito
             require_once 'views/carrito/index.php';
         }
 
         public function add(){
-            // Recoger parametro por url - si llega id por URL
+            
             if (isset($_GET['id'])) {
                 $producto_id = $_GET['id'];
             }else{
-                //Redirijir a 
+                
                 header('Location:'.base_url);
             }
 
@@ -36,18 +36,17 @@
             if(!isset($counter) || $counter == 0){
                     // Acceder al modelo para conseguir producto
                     $producto = new Producto();
-                    //Le pasamos por set el id del producto seleccionado
+                    //Le pasamos por set producto seleccionado
                     $producto->setId($producto_id);
-                    //Accede al metodo para realizar la consulta a la bd
+                    //Accede al metodo
                     $producto = $producto->getOne();
                     //Pasarle los datos del producto al carrito
                     // Crear sesion carrito
                     if (is_object($producto)) 
                     {
-                        //Carrito es un array y se
+                        
                         $_SESSION['carrito'][] = array
                         (
-                            //El array contendra:
                             "id_producto"=>$producto->id,
                             "precio"=>$producto->precio,
                             "unidades"=>1,
