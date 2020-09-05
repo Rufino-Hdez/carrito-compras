@@ -16,7 +16,7 @@
             <div id="logo">
                 <!-- <img src="<?=base_url?>assets/img/camiseta.png" alt="camiseta logo"> -->
                 <a href="<?=base_url?>">
-                    Mi tienda Online
+                    Mi Carrito de compras
                 </a>
             </div>
         </header>

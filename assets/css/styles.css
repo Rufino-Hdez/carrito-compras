@@ -639,7 +639,7 @@
     }
 }
 
-@media (max-width: 350px){
+@media (max-width: 415px){
     
     #logo {
         padding: 32px;
@@ -657,6 +657,37 @@
     
     #footer{
         font-size: 90%;
+    }
+
+    /**/
+
+    #detail_product .data {
+    width: 90%;
+    margin: 0px auto;
+    }
+
+    #detail_product .image {
+    display: block;
+    width: 50%;
+    float: none;
+    border: 0px;
+    margin: auto;
+    }
+
+    #detail_product .price {
+    text-align: center;
+    }
+
+    #detail_product .button {
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    }
+
+    .button {
+    padding: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
     }
     
     /*MIS PEDIDOS*/
@@ -693,76 +724,69 @@
         content: 'estado:'; font-weight: bold; margin-right: 5%;
     }
 
+    /*CARRITO DE LA COMPRA*/
+
+    /*MIS PEDIDOS*/
+    /*.carrito{
+        text-align: left;
+        font-size: 100%;
+    }
+
+    .carrito, .carrito tr, .carrito td {
+        display: block;
+    }
+    
+    .carrito tr:first-child { 
+        display: none; 
+    }
+    .carrito td::before { 
+        padding: 10px 0; 
+        position: relative; 
+    }
+
+    .carrito td:nth-child(1):before { 
+        content: 'Imagen'; font-weight: bold; margin-right: 10%;
+    }
+
+    .carrito td:nth-child(2):before { 
+        content: 'Nombre:'; font-weight: bold; margin-right: 5%;
+    }
+    
+    .carrito td:nth-child(3):before {
+        content: 'Precio:'; font-weight: bold; margin-right: 0%;
+    }
+
+    .carrito td:nth-child(4):before { 
+        content: 'unidad:'; font-weight: bold; margin-right: 5%;
+    }
+
+    .carrito td:nth-child(5):before { 
+        content: 'Accion:'; font-weight: bold; margin-right: 5%;
+    }*/
+
+    .carro {
+    overflow-x: auto; /* Horizontal */
+    }
+
+    .delete-carrito {
+        width: 50%;
+        float: left;
+        margin: auto;
+    }
+
+    .total-carrito {
+    width: 72%;
+    float: right;
+    text-align: center;
+    margin-left: 25%;
+    }
+
 
     /*GESTIONAR CATEGORIAS*/
 
     .button-small{
         margin: auto;
     }
-
-    /*GESTION PEDIDOS*/
-
-    /*.gestion{
-        text-align: left;
-        font-size: 100%;
-    }
-
-    .gestion, .tr-gestionp, .td-gestionp {
-        display: block;
-    }
-    
-    .tr-gestionp:first-child { 
-        display: none; 
-    }
-    .td-gestionp::before { 
-        padding: 10px 0; 
-        position: relative; 
-    }
-
-    .td-gestionp:nth-child(1):before { 
-        content: 'Id:'; font-weight: bold;
-    }
-
-    .td-gestionp:nth-child(2):before { 
-        content: 'Nombre:'; font-weight: bold; 
-    }
-    
-    .td-gestionp:nth-child(3):before {
-        content: 'Precio:'; font-weight: bold;
-    }
-
-    .td-gestionp:nth-child(4):before { 
-        content: 'stock:'; font-weight: bold;
-    }
-
-    .td-gestionp:nth-child(5):before { 
-        content: 'Accion:'; font-weight: bold;
-    }*/
-
-    
-       /*.gestion-p {
-           width:100%;
-       }
-       .gestion thead {
-           display: none;
-       }
-       .tr-pedidos :nth-of-type(2n) {
-           background-color: inherit;
-       }
-       .tr-gestionp .td-gestionp :first-child {
-           background: #f0f0f0;
-           font-weight:bold;
-           font-size:1.3em;
-       }
-       .gestion tbody .td-gestionp {
-           display: block;
-           text-align:center;
-       }
-       .gestion tbody .td-gestionp :before {
-           content: attr(data-th);
-           display: block;
-           text-align:center;
-       }*/
 
        .gestion-p {
        display: block;
