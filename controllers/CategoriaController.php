@@ -6,9 +6,9 @@ require_once 'models/producto.php';
 
     class categoriaController{
         public function index(){
-            //Acceder a la clase Utilidades, metodo isAdmin
+            //Acceder metodo isAdmin
             Utils::isAdmin(); 
-            /*2- Crear un objeto del modelo cate para acceder a sus metodos */
+            /*2- Crear un objeto del modelo cate  */
             $categoria= new Categoria();
             //crear var y dar el valor [Nota: Categorias ya esta disponible en index.php xq esta se declara antes de incluir la vista index.php]
             $categorias = $categoria->getAll();
@@ -42,7 +42,7 @@ require_once 'models/producto.php';
         }
         /*** CREAR CATEGORIAS ***/
         public function crear(){
-            //Acceder a la clase Utilidades, metodo isAdmin
+            //Acceder a metodo isAdmin
             Utils::isAdmin();
             //Incluir vista para crear categorias
             require_once 'views/categorias/crear.php';
