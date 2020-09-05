@@ -2,13 +2,13 @@
 /*  *************************************  */
            /* ESTILOS GENERALES */
 /*  *************************************  */
-            /* Resetear*/
+            
             *{
                 padding: 0px; /*margen interior*/
                 margin: 0px;  /*margen exterior*/
                 font-family: Arial, Helvetica, sans-serif;
             }
-            /* Fondo de cuerpo de pagina */
+            
             body{
                 background: url(../img/bg.png);
             }
@@ -16,11 +16,11 @@
             a{
                 color: #01B1EA;
             }
-            /* Cuando ya hayan visitado el enlace - mismo color */
+            
             a:visited{
                 color: #01B1EA;
             }
-            /* al pasar por el enlace */
+            
             a:hover{
                 color: #555555;
             }
@@ -73,16 +73,16 @@
             #logo {
                 padding: 20px;
                 margin-left:20px;
-                float: right;/*Posision a izquierda*/
+                float: right;
             }
             /* Logo - imagen*/
             #logo img{
                 height: 100px;
-                float: left; /*Posision a izquierda*/
+                float: left;
             }
             /* Logo - texto */
             #logo a{
-                float: right; /*Posision a izquierda*/
+                float: right;
                 font-size: 40px;
                 letter-spacing: 4px;
                 /*font-family:sans-serif;*/
@@ -109,15 +109,15 @@
                 /* ESTILOS MENU */
     /*  *************************************  */
             #menu{
-                clear: both; /*Limpiar floats del header*/
+                clear: both; 
                 background: #222;
                 color:white;
-                height: 55px;/*Alto de caja*/
+                height: 55px;
                 border-bottom: 4px solid #01B1EA;
             }
             
             #menu ul{
-                list-style: none; /*Quitar puntos de la lista*/
+                list-style: none; 
                 text-decoration: none;
                 margin: 0px auto;
                 margin-left: 20px;
@@ -130,14 +130,14 @@
             }
 
             #menu a{
-                display: block; /*Se comporte como un bloque*/
+                display: block;
                 color:white;
                 text-decoration: none;
                 padding-left: 12px;
                 padding-right: 12px;
                 transition: all 300ms;
             }
-            /* Poner borde izq al primer elemento */
+            
             #menu a:first-child{
                 border-left: 1px solid #363636;   
             }
@@ -149,7 +149,7 @@
     /*CONTENT*/
             #content{
                 margin: 0px auto;
-                overflow: hidden; /*Lo que sobresalga del div se oculte*/
+                overflow: hidden; 
                 background: white;
 
             }
@@ -158,7 +158,7 @@
     /*  *************************************  */
             #lateral {
                 width: 22%;
-                min-height: 500px; /*Alto minimo*/
+                min-height: 500px; 
                 float: left;
                 margin-top: 20px;
                 margin-left: 10px;
